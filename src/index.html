@@ -5,7 +5,9 @@
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Fontawesome is our recomended library for icons -->
     <link
       rel="stylesheet"
@@ -16,17 +18,59 @@
   </head>
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div class="container mt-0">
+      <div class="d-flex justify-content-center">
+        <img style="width: 420px;" src="https://adserweb.com/wp-content/uploads/Dominio-v2.png" alt="">
+      </div>        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header text-center bg-secondary text-white">
+                        <h5 class="mb-0">Dominios Normales</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-scroll">
+                            <table class="table table-striped table-hover mb-0">
+                                <thead class="table-dark sticky-top">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Dominio</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="dominiosNormales">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header text-center bg-warning text-white">
+                        <h5 class="mb-0">Dominios con Hack</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-scroll">
+                            <table class="table table-striped table-hover mb-0">
+                                <thead class="table-dark sticky-top">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Dominio</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="dominiosHack">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-bottom p-4 d-flex justify-content-center">
+      Made with 👨🏻‍💻 by
+      <a target="_blank" href="https://github.com/stevenyat">Steven Acero</a>
     </div>
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
