@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url(/workspaces/stevenyat-Generador-de-dominios/src/assets/img/bg.jpg);
+    background-image: url("/workspaces/stevenyat-Generador-de-dominios/src/assets/img/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
